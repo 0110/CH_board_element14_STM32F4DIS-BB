@@ -108,7 +108,7 @@
 #define GPIOC_SD_CLK                12
 #define GPIOC_PIN13                 13
 #define GPIOC_PIN14                 14
-#define GPIOC_PIN15                 15
+#define GPIOC_TEMP_ANALOG_VOLT      15
 
 #define GPIOD_PIN0                  0
 #define GPIOD_PIN1                  1
@@ -503,7 +503,7 @@
                                      PIN_MODE_ALTERNATE(GPIOC_SD_CLK) |     \
                                      PIN_MODE_INPUT(GPIOC_PIN13) |          \
                                      PIN_MODE_INPUT(GPIOC_PIN14) |          \
-                                     PIN_MODE_INPUT(GPIOC_PIN15))
+                                     PIN_MODE_ANALOG(GPIOC_TEMP_ANALOG_VOLT))
 #define VAL_GPIOC_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOC_OTG_FS_POWER_ON) |\
                                      PIN_OTYPE_PUSHPULL(GPIOC_ETH_RMII_MDC) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOC_PIN2) |       \
@@ -519,7 +519,7 @@
                                      PIN_OTYPE_PUSHPULL(GPIOC_SD_CLK) |     \
                                      PIN_OTYPE_PUSHPULL(GPIOC_PIN13) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOC_PIN14) |      \
-                                     PIN_OTYPE_PUSHPULL(GPIOC_PIN15))
+                                     PIN_OTYPE_PUSHPULL(GPIOC_TEMP_ANALOG_VOLT))
 #define VAL_GPIOC_OSPEEDR           (PIN_OSPEED_100M(GPIOC_OTG_FS_POWER_ON) |\
                                      PIN_OSPEED_100M(GPIOC_ETH_RMII_MDC) |          \
                                      PIN_OSPEED_100M(GPIOC_PIN2) |          \
@@ -535,7 +535,7 @@
                                      PIN_OSPEED_100M(GPIOC_SD_CLK) |        \
                                      PIN_OSPEED_100M(GPIOC_PIN13) |         \
                                      PIN_OSPEED_100M(GPIOC_PIN14) |         \
-                                     PIN_OSPEED_100M(GPIOC_PIN15))
+                                     PIN_OSPEED_100M(GPIOC_TEMP_ANALOG_VOLT))
 #define VAL_GPIOC_PUPDR             (PIN_PUPDR_FLOATING(GPIOC_OTG_FS_POWER_ON) |\
                                      PIN_PUPDR_FLOATING(GPIOC_ETH_RMII_MDC) |         \
                                      PIN_PUPDR_PULLUP(GPIOC_PIN2) |         \
@@ -551,7 +551,7 @@
                                      PIN_PUPDR_FLOATING(GPIOC_SD_CLK) |     \
                                      PIN_PUPDR_PULLUP(GPIOC_PIN13) |        \
                                      PIN_PUPDR_PULLUP(GPIOC_PIN14) |        \
-                                     PIN_PUPDR_PULLUP(GPIOC_PIN15))
+                                     PIN_PUPDR_PULLUP(GPIOC_TEMP_ANALOG_VOLT))
 #define VAL_GPIOC_ODR               (PIN_ODR_HIGH(GPIOC_OTG_FS_POWER_ON) |  \
                                      PIN_ODR_HIGH(GPIOC_ETH_RMII_MDC) |             \
                                      PIN_ODR_HIGH(GPIOC_PIN2) |             \
@@ -567,7 +567,7 @@
                                      PIN_ODR_HIGH(GPIOC_SD_CLK) |           \
                                      PIN_ODR_HIGH(GPIOC_PIN13) |            \
                                      PIN_ODR_HIGH(GPIOC_PIN14) |            \
-                                     PIN_ODR_HIGH(GPIOC_PIN15))
+                                     PIN_ODR_HIGH(GPIOC_TEMP_ANALOG_VOLT))
 #define VAL_GPIOC_AFRL              (PIN_AFIO_AF(GPIOC_OTG_FS_POWER_ON, 0) |\
                                      PIN_AFIO_AF(GPIOC_ETH_RMII_MDC, 11) |           \
                                      PIN_AFIO_AF(GPIOC_PIN2, 0) |           \
@@ -583,7 +583,7 @@
                                      PIN_AFIO_AF(GPIOC_SD_CLK, 12) |        \
                                      PIN_AFIO_AF(GPIOC_PIN13, 0) |          \
                                      PIN_AFIO_AF(GPIOC_PIN14, 0) |          \
-                                     PIN_AFIO_AF(GPIOC_PIN15, 0))
+                                     PIN_AFIO_AF(GPIOC_TEMP_ANALOG_VOLT, 0))
 
 /*
  * GPIOD setup:
