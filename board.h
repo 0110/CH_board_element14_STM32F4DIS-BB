@@ -234,7 +234,7 @@
  * GPIOA setup:
  *
  * PA0  - BUTTON                    (input floating).
- * PA1  - PIN1                      (input pullup).
+ * PA1  - GPIOA_BTNRPM1             (input pulldown).
  * PA2  - PIN2                      (input pullup).
  * PA3  - PIN3                      (input pullup).
  * PA4  - LRCK                      (alternate 6).
@@ -299,7 +299,7 @@
                                      PIN_OSPEED_100M(GPIOA_SWCLK) |         \
                                      PIN_OSPEED_100M(GPIOA_PIN15))
 #define VAL_GPIOA_PUPDR             (PIN_PUPDR_FLOATING(GPIOA_BUTTON) |     \
-                                     PIN_PUPDR_FLOATING(GPIOA_BTNRPM1) |         \
+                                     PIN_PUPDR_PULLDOWN(GPIOA_BTNRPM1) |         \
                                      PIN_PUPDR_PULLUP(GPIOA_PIN2) |         \
                                      PIN_PUPDR_PULLUP(GPIOA_PIN3) |         \
                                      PIN_PUPDR_FLOATING(GPIOA_LRCK) |       \
