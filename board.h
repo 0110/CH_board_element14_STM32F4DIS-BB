@@ -21,6 +21,8 @@
  * Setup for STMicroelectronics STM32F4-Discovery board.
  */
 
+#define STM32F40_41xxx
+
 /*
  * Board identifier.
  */
@@ -33,7 +35,7 @@
  * NOTE: LSE not fitted.
  */
 #if !defined(STM32_LSECLK)
-#define STM32_LSECLK                0
+#define STM32_LSECLK                32768
 #endif
 
 #if !defined(STM32_HSECLK)
@@ -447,13 +449,13 @@
                                      PIN_ODR_HIGH(GPIOB_PIN13) |            \
                                      PIN_ODR_HIGH(GPIOB_PIN14) |            \
                                      PIN_ODR_HIGH(GPIOB_PIN15))
-#define VAL_GPIOB_AFRL              (PIN_AFIO_AF(GPIOB_PIN0, 0) |           \
+#define VAL_GPIOB_AFRL              (PIN_AFIO_AF(GPIOB_PIN0, 2) |           \
                                      PIN_AFIO_AF(GPIOB_PIN1, 0) |           \
                                      PIN_AFIO_AF(GPIOB_PIN2, 0) |           \
                                      PIN_AFIO_AF(GPIOB_SWO, 0) |            \
                                      PIN_AFIO_AF(GPIOB_PIN4, 0) |           \
                                      PIN_AFIO_AF(GPIOB_PIN5, 0) |           \
-                                     PIN_AFIO_AF(GPIOB_SCL, 4) |            \
+                                     PIN_AFIO_AF(GPIOB_SCL, 7) |            \
                                      PIN_AFIO_AF(GPIOB_PIN7, 0))
 #define VAL_GPIOB_AFRH              (PIN_AFIO_AF(GPIOB_PIN8, 0) |           \
                                      PIN_AFIO_AF(GPIOB_SDA, 4) |            \
